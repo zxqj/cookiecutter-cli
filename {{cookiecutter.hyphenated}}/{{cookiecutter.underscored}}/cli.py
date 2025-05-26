@@ -1,5 +1,8 @@
 import click
+import sh
+from .. cli_tools import loudspeaker, wrap_module_with_decorator
 
+loud_sh = wrap_module_with_decorator('sh', loudspeaker)
 
 @click.group()
 @click.version_option()
