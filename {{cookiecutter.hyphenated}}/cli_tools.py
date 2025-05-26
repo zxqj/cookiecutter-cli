@@ -1,11 +1,12 @@
 import types
 from sh import Command
+import importlib
+from rich import print as rprint
 
-# loud_sh = blast(sh)
-# from loud_sh import borg, git
+
 def loudspeaker(some_command):
     def stream_and_capture_output(line, buffer):
-        print(line, end='')  # Stream the output in real-time
+        rprint(line, end='')  # Stream the output in real-time
         buffer.append(line)  # Append the output to a list
     def run_command(*args, **kwargs):
         output_buffer = []
