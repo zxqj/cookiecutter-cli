@@ -9,7 +9,7 @@
 
 ## Installation
 
-Install this tool using `pip`:
+To install this tool using `pip`:
 ```bash
 pip install {{ cookiecutter.hyphenated }}
 ```
